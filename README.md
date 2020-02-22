@@ -2,3 +2,5 @@
 javafx 使用css装饰的一个窗体
 
 jdk11.04
+
+![演示图片](https://mmyj4g.sn.files.1drv.com/y4mcucvb7w2FToe3epGVU0MYV6rM-l_3BXDergbAu8Z8str-DOzYpyXuDcjq5SuPSLcC0PLHlG_T4NotZULmtgeBy_quUqdmqAOPlrMdCffYg3894xtz2TIHAMkFd_9GcdTbW0g6eVqaCfdVU3mEEwBN_3RtCLSeyyuc_YVYB0GtuMzHXXi4tDWr9IJueza63dtdl4jIvtiGLU739ximcy7XQ?width=1200&height=700&cropmode=none)
