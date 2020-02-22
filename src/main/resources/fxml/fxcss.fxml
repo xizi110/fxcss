@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.*?>
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="700.0" prefWidth="1200.0"
+            stylesheets="/css/fxcss.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="xyz.yuelai.fxcss.controller.FxCssController">
+    <left>
+        <VBox id="left-container" fx:id="nav" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefWidth="100.0" spacing="10">
+                    <children>
+                        <Pane>
+                            <JFXHamburger id="hamburger" fx:id="fold" alignment="CENTER">
+                            </JFXHamburger>
+                            <VBox.margin>
+                                <Insets left="5.0"/>
+                            </VBox.margin>
+                        </Pane>
+
+                        <Pane>
+                            <children>
+                                <TextField id="search-box" fx:id="keyword" layoutX="10.0" prefWidth="314.0"
+                                           promptText="Search"/>
+                                <JFXButton id="search-btn" layoutX="253.0" layoutY="0" mnemonicParsing="false"
+                                           prefWidth="50">
+                                    <graphic>
+                                        <FontIcon iconColor="WHITE" iconLiteral="fa-search" iconSize="12"/>
+                                    </graphic>
+                                </JFXButton>
+                                <FontIcon fx:id="searchIcon" iconColor="WHITE" iconLiteral="fa-search" iconSize="20"
+                                          layoutX="10.0" layoutY="25.0" visible="false" wrappingWidth="25"/>
+                            </children>
+                        </Pane>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </VBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="What's New" textOverrun="CLIP"
+                                   HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-question" iconSize="20" wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="All Controls" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-address-book" iconSize="20"
+                                          wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <Separator id="separator" prefHeight="0.1" prefWidth="320.0">
+                    <VBox.margin>
+                        <Insets bottom="5.0" top="5.0"/>
+                    </VBox.margin>
+                </Separator>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Basic Input" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-address-book-o" iconSize="20"
+                                          wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Collections" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-address-card" iconSize="20"
+                                          wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Date and Time" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-address-card-o" iconSize="20"
+                                          wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Dialogs and Flyouts" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-adjust" iconSize="20" wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Layout" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-adn" iconSize="20" wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Media" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-align-center" iconSize="20"
+                                          wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Menus and Toolbars" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-align-left" iconSize="20"
+                                          wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Motion" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-align-right" iconSize="20"
+                                          wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Navigation" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-arrows-h" iconSize="20" wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Scrolling" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-arrows-v" iconSize="20" wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+                <HBox prefWidth="200.0">
+                    <children>
+                        <JFXButton maxWidth="1.7976931348623157E308" text="Text" HBox.hgrow="ALWAYS">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-asterisk" iconSize="20" wrappingWidth="25"/>
+                            </graphic>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <ScrollPane id="main-container" fitToWidth="true"
+                    BorderPane.alignment="CENTER">
+            <content>
+                <VBox prefHeight="670.0" prefWidth="880.0">
+                    <children>
+                        <Label text="What's New">
+                            <font>
+                                <Font name="Tahoma Bold" size="30.0"/>
+                            </font>
+                        </Label>
+                        <Separator prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Separator>
+                        <TilePane fx:id="tilePane" alignment="CENTER_LEFT" hgap="20.0" prefHeight="503.0"
+                                  prefWidth="805.0" vgap="20.0">
+                            <children>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                                <Pane prefHeight="140.0" prefWidth="344.0" style="-fx-background-color: #191919;"/>
+                            </children>
+                            <padding>
+                                <Insets top="5.0"/>
+                            </padding>
+                        </TilePane>
+                    </children>
+                    <padding>
+                        <Insets left="30.0" right="30.0"/>
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+    <top>
+        <GridPane id="title-bar" prefHeight="30.0" prefWidth="1184.0" style="-fx-background-color: #000000;"
+                  BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.0" minWidth="10.0" prefWidth="320.0"/>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="700.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label id="title" fx:id="title1" prefHeight="30.0" prefWidth="40.0"/>
+                <Label id="title" fx:id="title" prefHeight="30.0" prefWidth="320.0" text="JavaFX CSS 演示"/>
+                <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="754.0" spacing="10.0"
+                      style="-fx-background-color: #000000;" GridPane.columnIndex="1">
+                    <children>
+                        <Label fx:id="minimize" alignment="CENTER" prefHeight="70.0" prefWidth="30.0" translateY="0">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-window-minimize" iconSize="12"
+                                          translateY="-3"/>
+                            </graphic>
+                        </Label>
+                        <Label fx:id="maximize" alignment="CENTER" prefHeight="30.0" prefWidth="30.0">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-window-maximize" iconSize="12" layoutX="0"/>
+                            </graphic>
+                        </Label>
+                        <Label fx:id="close" alignment="CENTER" prefHeight="30.0" prefWidth="30.0">
+                            <graphic>
+                                <FontIcon iconColor="WHITE" iconLiteral="fa-close" iconSize="17"/>
+                            </graphic>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+    </top>
+</BorderPane>

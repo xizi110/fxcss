@@ -1,0 +1,100 @@
+*{
+	-fx-text-fill: #ffffff;
+}
+#left-container {
+    -fx-pref-width: 320px;
+	-fx-min-width: 0px;
+}
+
+#left-container,
+#left-container JFXButton,
+#left-container Label {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #1f1f1f;
+}
+
+#left-container > HBox,
+#left-container > HBox > JFXButton,
+#left-container > HBox > Label {
+    -fx-pref-height: 40px;
+}
+
+#left-container > HBox > JFXButton {
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 14px;
+    -fx-background-radius: 0;
+	-fx-text-overrun: clip;
+}
+
+#left-container > HBox > JFXButton:hover{
+	-fx-background-color: linear-gradient(to right,#363636, #4b4b4b);;
+}
+
+#hamburger{
+	-fx-pref-width: 30px;
+	-fx-pref-height: 30px;
+}
+#hamburger:hover {
+	-fx-background-color: #353535;
+}
+
+.jfx-hamburger > StackPane {
+    -fx-background-color: #fff;
+    -fx-pref-height: 1px;
+    -fx-pref-width: 20px;
+}
+
+#search-box {
+    -fx-pref-height: 32px;
+    -fx-pref-width: 294px;
+    -fx-background-radius: 2px;
+    -fx-border-radius: 2px;
+    -fx-background-color: #000;
+    -fx-border-width: 1px;
+    -fx-border-color: #a5a5a5;
+    -fx-font-size: 13;
+    -fx-text-fill: #ffffff;
+}
+
+#clean-btn {
+    -fx-pref-height: 32px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+
+
+}
+
+#search-btn {
+    -fx-pref-height: 32px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+
+}
+
+.separator .line {
+    -fx-border-color: #4c4c4c;
+    -fx-border-insets: -0.5;
+}
+#main-container{
+    -fx-pref-width: 880px;
+}
+#main-container,
+#main-container .viewport {
+    -fx-background-color: #000000;
+}
+
+#title-bar #title {
+    -fx-background-color: #1f1f1f;
+    -fx-padding: 0 0 0 10px;
+}
+
+#title-bar HBox Label {
+    -fx-background-color: #000000;
+}
+#title-bar HBox Label:hover{
+	-fx-background-color: #191919;
+}
+
+.root{
+    -fx-skin: #121212;
+}
