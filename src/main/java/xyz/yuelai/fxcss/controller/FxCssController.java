@@ -23,9 +23,21 @@ import org.kordamp.ikonli.javafx.FontIcon;
 public class FxCssController {
 
     public BorderPane root;
+    /**
+     * 关闭
+     */
     public Label close;
+    /**
+     * 最大化
+     */
     public Label maximize;
+    /**
+     * 最小化
+     */
     public Label minimize;
+    /**
+     * 汉堡折叠按钮
+     */
     public JFXHamburger fold;
     public VBox nav;
     public TextField keyword;
@@ -34,46 +46,62 @@ public class FxCssController {
     private double offsetX;
     private double offsetY;
 
-    private BooleanProperty expand = new SimpleBooleanProperty(false);
+    /**
+     * 侧边菜单是否展开，默认为展开
+     */
+    private BooleanProperty expand = new SimpleBooleanProperty(true);
 
     public void initialize() {
 
+        // 鼠标按下事件
         root.setOnMousePressed(event -> {
             Window window = root.getScene().getWindow();
+            //             鼠标在屏幕中的坐标，    窗体在屏幕中的坐标
             this.offsetX = event.getScreenX() - window.getX();
             this.offsetY = event.getScreenY() - window.getY();
         });
 
+        // 拖拽事件
         root.setOnMouseDragged(event -> {
             Window window = root.getScene().getWindow();
+            //   新的鼠标位置-旧的鼠标位置+旧的窗体位置
+            // = 鼠标的偏移量+旧的窗体位置
             window.setX(event.getScreenX() - this.offsetX);
             window.setY(event.getScreenY() - this.offsetY);
         });
 
+        // 最小化
         minimize.setOnMouseClicked(event -> {
             Stage stage = (Stage) root.getScene().getWindow();
             stage.setIconified(true);
         });
 
+        // 最大化
         maximize.setOnMouseClicked(event -> {
             Stage stage = (Stage) root.getScene().getWindow();
+            // 最大化，取消最大化
             stage.setMaximized(stage.maximizedProperty().not().get());
         });
 
+        // 退出
         close.setOnMouseClicked(event -> {
             Platform.exit();
         });
+        // 当折叠后，搜索框显示为搜索图标
+        searchIcon.visibleProperty().bind(expand.not());
+        // 当展开后，搜索框显示
+        keyword.visibleProperty().bind(expand);
 
-        searchIcon.visibleProperty().bind(expand);
-        keyword.visibleProperty().bind(expand.not());
-
+        // 汉堡菜单点击，改变expand的值，expand标志为侧边菜单打开标志
         fold.setOnMouseClicked(event -> {
             expand.set(expand.not().get());
         });
 
+        // 为expand标志提供change监听器
         expand.addListener((observableValue, oldVal, newVal) -> {
-
-            if (newVal) {
+            System.out.println("newVal = "+newVal);
+            if (!newVal) {
+                // 如果为false，则为折叠状态，侧边菜单可以折叠
                 Timeline timeline = new Timeline();
                 timeline.getKeyFrames().addAll(
                         new KeyFrame(Duration.millis(30), new KeyValue(nav.prefWidthProperty(), 220)),
@@ -84,7 +112,8 @@ public class FxCssController {
                 timeline.play();
                 title.setStyle("-fx-background-color: transparent; -fx-padding: 0 0 0 50px");
             }
-            if (!newVal) {
+            if (newVal) {
+                // 如果为true，则为展开状态，可以展开
                 Timeline timeline = new Timeline();
                 timeline.getKeyFrames().addAll(
                         new KeyFrame(Duration.millis(30), new KeyValue(nav.prefWidthProperty(), 40)),
