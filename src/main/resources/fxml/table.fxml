@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import xyz.yuelai.fxcss.cellfactory.TableCellFactory?>
+<AnchorPane prefHeight="522.0" prefWidth="913.0" xmlns="http://javafx.com/javafx/11.0.1"
+            stylesheets="/css/table.css"
+            fx:controller="xyz.yuelai.fxcss.controller.TableController"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <TableView id="table-view" fx:id="tableView" layoutX="126.0" layoutY="76.0" prefHeight="324.0"
+                   prefWidth="662.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="#ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="姓名">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="年龄">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="age"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="性别">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="name"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="爱好">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="hobbit"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="民族">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="nation"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="学历">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="education"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn prefWidth="75.0" text="操作">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="deleteBtn"/>
+                    </cellValueFactory>
+                    <cellFactory>
+                        <TableCellFactory/>
+                    </cellFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
