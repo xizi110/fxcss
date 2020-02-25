@@ -1,6 +1,12 @@
 # fxcss
-javafx 使用css装饰的一个窗体
+
+JavaFX CSS使用演示
 
 jdk11.04
 
+javafx 使用css装饰的一个窗体
 ![演示图片](https://onedrive.gimhoy.com/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBbkZLaFRsYklwS0Z4UWdkaXo1Mm9lV0V1dmRYP2U9Q3JnaHI0.mp3)
+
+
+使用css修饰的表格
+![演示图片](https://m8znwq.sn.files.1drv.com/y4mYaAXI1j3u49Z8qiUyFQ2IOQPd7J62mIsWsqXmqRH21orchSP4vuAzSPiCi24_F0OSwk0f6XWR_C3jyw5seHA7F3bP7uDKRAg6dXQzJvPZGqFnwnB3LfOQKRr2dmx19O8bJkq7l5HCEzdgCKZFRLPdnVVbAIAjPK4OOSC7ZrxPmFz-lkjGb_UgptYFGySmn11QaBgKg94NqpRoYg9iCw2qA)
