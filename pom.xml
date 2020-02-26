@@ -50,6 +50,11 @@
             <artifactId>ikonli-fontawesome-pack</artifactId>
             <version>11.3.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-dashicons-pack</artifactId>
+            <version>11.3.5</version>
+        </dependency>
 
         <!-- jfoenix组件库  -->
         <dependency>

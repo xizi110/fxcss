@@ -1,0 +1,43 @@
+*{
+    -fx-font-smoothing-type: lcd;
+    -fx-prompt-text-fill: #ccc;
+}
+
+#title{
+    -fx-text-fill: WHITE;
+    -fx-font-size: 22;
+    -fx-alignment: center;
+}
+#type, #accountText, #passwordText{
+    -fx-pref-width: 200;
+
+}
+#typeLabel, #accountTextLabel, #passwordTextLabel{
+    -fx-font-size: 14;
+}
+
+#loginBtn{
+    -fx-pref-width: 105;
+    -fx-pref-height: 35;
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+HBox>Label,
+JFXTextField,
+JFXPasswordField,
+JFXButton{
+    -fx-text-fill: WHITE;
+}
+
+#lg-pane{
+    -fx-background-color: #00000044;
+    -fx-background-radius: 10;
+}
+.list-cell{
+    -fx-text-fill: WHITE;
+}
+.combo-box-popup .list-cell{
+    -fx-text-fill: BLACK;
+}

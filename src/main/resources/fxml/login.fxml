@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="root" prefHeight="600.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="/css/login.css"
+            fx:controller="xyz.yuelai.fxcss.controller.LoginController">
+
+    <ImageView fitHeight="600" fitWidth="1050">
+        <Image url="/img/login.jpg"/>
+    </ImageView>
+
+    <VBox id="lg-pane" fx:id="lgPane" alignment="CENTER" prefHeight="300" prefWidth="550">
+        <children>
+            <HBox prefWidth="550.0" VBox.vgrow="ALWAYS" id="title">
+                <Label text="系统登录">
+                </Label>
+            </HBox>
+
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="200.0">
+                <children>
+                    <Label id="typeLabel" text="身份："/>
+                    <JFXComboBox id="type" fx:id="type" promptText="请选择登录身份" prefHeight="23.0" prefWidth="147.0"/>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="550.0">
+                <children>
+                    <Label id="accountTextLabel" text="账号："/>
+                    <JFXTextField id="accountText" fx:id="accountText" promptText="请输入账号"/>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="55.0" prefWidth="550.0">
+                <children>
+                    <Label id="passwordTextLabel" text="密码："/>
+                    <JFXPasswordField id="passwordText" fx:id="passwordText" promptText="请输入密码"/>
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="70.0" prefWidth="200.0">
+                <children>
+                    <JFXButton buttonType="RAISED" prefHeight="35.0" prefWidth="105.0" text="登录" id="loginBtn"
+                               onAction="#login" fx:id="loginBtn"/>
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+
+
+</AnchorPane>
