@@ -71,6 +71,8 @@ public class LoginController implements Initializable {
         loginBtn.setText(null);
         loginBtn.setGraphic(progressIndicator);
 
+        System.out.println(root.getChildren().size());
+
         Task<Void> task = new Task<>() {
             @Override
             protected Void call() throws Exception {

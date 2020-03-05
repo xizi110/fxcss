@@ -1,0 +1,29 @@
+.day-pane .label{
+    -fx-font-weight: bold;
+    -fx-text-fill: #a8a8a8;
+    -fx-font-size: 14px;
+    -fx-pref-height: 35px;
+    -fx-pref-width: 50px;
+    -fx-alignment: CENTER;
+}
+.active{
+    -fx-border-color: #ff899f;
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-insets: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.day-pane .today{
+    -fx-background-radius: 100%;
+    -fx-background-color: #ff8599;
+    -fx-border-radius: 100%;
+    -fx-background-insets: 5px;
+    -fx-border-insets: 5px;
+    -fx-text-fill: #fff !important;
+    -fx-font-size: 20px;
+}
+
+.day-pane .nowMonth{
+    -fx-text-fill: #333;
+}

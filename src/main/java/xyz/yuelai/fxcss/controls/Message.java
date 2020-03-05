@@ -21,8 +21,6 @@ public class Message extends Label {
 
     private static final String DEFAULT_STYLE_CLASS = "message";
 
-    private static Integer messageCount = 0;
-
     private Pane container;
 
     public void setContainer(Pane container) {
@@ -44,6 +42,7 @@ public class Message extends Label {
     public Message(String text, Pane container, MessageType type) {
         super(text, getIcon(type));
         this.container = container;
+
         this.getStylesheets().add(getClass().getResource("/css/message.css").toExternalForm());
 
         if (type == null) {
@@ -96,9 +95,8 @@ public class Message extends Label {
      * 显示信息框
      */
     public void show() {
-        if (this.container != null && messageCount == 0) {
+        if (this.container != null && this.container.lookup(".message") == null) {
             this.container.getChildren().add(this);
-            messageCount++;
         }
     }
 
@@ -115,6 +113,8 @@ public class Message extends Label {
         translateY(getLayoutY(), 10);
     }
 
+
+
     private void translateY(double start, double end) {
         Timeline timeline = new Timeline();
         timeline.getKeyFrames().addAll(
@@ -124,8 +124,9 @@ public class Message extends Label {
                 new KeyFrame(Duration.millis(2400), new KeyValue(layoutYProperty(), start, Interpolator.EASE_BOTH))
         );
         timeline.play();
+
         timeline.setOnFinished(event -> {
-            messageCount = 0;
+            this.container.getChildren().remove(this);
         });
     }
 }
