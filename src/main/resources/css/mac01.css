@@ -1,0 +1,64 @@
+.root {
+    -fx-font-size: 14px;
+}
+
+#decoration {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff, #fdfdfe);
+}
+
+.left-nav {
+    -fx-background-color: linear-gradient(to bottom right, #ffffff, #f2f2f6);
+    -fx-font-weight: bold;
+}
+
+.left-nav .label {
+    -fx-text-fill: #99a1a9;
+}
+
+.left-nav .button {
+    -fx-text-fill: #747475;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 6px 8px;
+}
+
+.active {
+    -fx-background-color: linear-gradient(to right, #00b6ff, #00cbff);
+    -fx-text-fill: #fff !important;
+}
+
+.content {
+    -fx-background-color: linear-gradient(to bottom right, #fafafc, #f5f5f8);
+}
+
+.border-label{
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 5px;
+    -fx-border-color: #fff;
+}
+
+.content .tile-pane .label{
+    -fx-font-weight: 700;
+    -fx-text-fill: #555555;
+}
+
+#border-color-1{
+    -fx-border-color: transparent transparent transparent #13caff;
+}
+
+#border-color-2{
+    -fx-border-color: transparent transparent transparent #ae9bff;
+}
+
+#border-color-3{
+    -fx-border-color: transparent transparent transparent #ffc474;
+}
+.viewport,
+.scroll-pane{
+    -fx-background-color: linear-gradient(to bottom right, #fafafc, #f5f5f8);
+    -fx-border-color: transparent;
+}
+

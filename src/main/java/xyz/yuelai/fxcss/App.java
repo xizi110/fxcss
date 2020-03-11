@@ -19,18 +19,19 @@ public class App extends Application {
     private static final String FXCSS_FXML_PATH = "/fxml/fxcss.fxml";
     private static final String TABLE_FXML_PATH = "/fxml/table.fxml";
     private static final String LOGIN_FXML_PATH = "/fxml/login.fxml";
+    private static final String MAC01_FXML_PATH = "/fxml/mac01.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         primaryStage.initStyle(StageStyle.DECORATED);
 
-        URL resource = getClass().getResource(LOGIN_FXML_PATH);
+        URL resource = getClass().getResource(MAC01_FXML_PATH);
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
         Pane root = fxmlLoader.load();
 
         Calendar calendar = new Calendar();
 
-        Scene scene = new Scene(calendar);
+        Scene scene = new Scene(root);
 
         primaryStage.setScene(scene);
         primaryStage.show();

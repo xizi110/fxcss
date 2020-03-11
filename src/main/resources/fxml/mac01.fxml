@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1200.0" stylesheets="@../css/mac01.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xyz.yuelai.fxcss.controller.Mac01SampleController">
+   <left>
+      <VBox prefWidth="200.0" spacing="20.0" styleClass="left-nav" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="FAVORITES">
+               <padding>
+                  <Insets left="7.0" right="7.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton text="AirDrop" />
+            <JFXButton text="iCloud Drive" />
+            <JFXButton text="Applications" />
+            <JFXButton styleClass="active" text="Aurelien" />
+            <JFXButton text="Pictures" />
+            <Label text="FAVORITES">
+               <padding>
+                  <Insets left="7.0" right="7.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton text="Macbook Pro" />
+            <JFXButton text="Hard Drive" />
+         </children>
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="60.0" prefWidth="1200.0" styleClass="content" BorderPane.alignment="CENTER">
+         <children>
+            <Pane id="decoration" prefHeight="200.0" prefWidth="200.0">
+            </Pane>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <ScrollPane fitToWidth="true" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane fx:id="container" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="979.0">
+               <children>
+                  <VBox fx:id="vb" layoutX="60.0" layoutY="55.0" prefWidth="780.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="58.0">
+                     <children>
+                        <TilePane hgap="70.0" prefWidth="780.0" styleClass="tile-pane" vgap="50.0">
+                           <children>
+                              <AnchorPane id="border-color-1" prefHeight="75.0" prefWidth="210.0" styleClass="border-label">
+                                 <children>
+                                    <Label prefHeight="68.0" prefWidth="182.0" style="-fx-background-color: #fff;" text="Application" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane id="border-color-2" prefHeight="75.0" prefWidth="210.0" styleClass="border-label">
+                                 <children>
+                                    <Label prefHeight="68.0" prefWidth="182.0" style="-fx-background-color: #fff;" text="Design" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane id="border-color-3" prefHeight="75.0" prefWidth="210.0" styleClass="border-label">
+                                 <children>
+                                    <Label prefHeight="68.0" prefWidth="182.0" style="-fx-background-color: #fff;" text="Download" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <padding>
+                                          <Insets left="20.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="60.0" />
+                           </VBox.margin>
+                        </TilePane>
+                        <FlowPane hgap="70.0" prefHeight="200.0" prefWidth="200.0" vgap="50.0">
+                           <children>
+                              <ImageView fitHeight="210.0" fitWidth="210.0" pickOnBounds="true" fx:id="imageView">
+                                 <image>
+                                    <Image url="@../img/mac01.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox prefWidth="210.0" spacing="50.0">
+                                 <children>
+                                    <AnchorPane prefHeight="73.0" prefWidth="210.0" styleClass="border-label">
+                                       <children>
+                                          <Label prefHeight="68.0" prefWidth="182.0" style="-fx-background-color: #fff;" text="Documents" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets left="20.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="75.0" prefWidth="210.0" styleClass="border-label">
+                                       <children>
+                                          <Label prefHeight="68.0" prefWidth="182.0" style="-fx-background-color: #fff;" text="Music" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <padding>
+                                                <Insets left="20.0" />
+                                             </padding>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <FlowPane.margin>
+                                    <Insets />
+                                 </FlowPane.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+                  <Label layoutX="110.0" layoutY="5.0" text="Users" textFill="#a4a1a1">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="110.0" layoutY="39.0" text="西子天堂美">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
