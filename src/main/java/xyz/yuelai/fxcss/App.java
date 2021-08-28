@@ -25,7 +25,7 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception {
         primaryStage.initStyle(StageStyle.DECORATED);
 
-        URL resource = getClass().getResource(MAC01_FXML_PATH);
+        URL resource = getClass().getResource(FXCSS_FXML_PATH);
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
         Pane root = fxmlLoader.load();
 

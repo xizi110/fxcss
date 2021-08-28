@@ -13,20 +13,56 @@
     -fx-background-color: #1f1f1f;
 }
 
-#left-container > HBox,
-#left-container > HBox > JFXButton,
-#left-container > HBox > Label {
+#scroll-pane .scroll-bar EndButton{
+
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button{
+    -fx-opacity: 0;
+}
+
+.scroll-bar{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track-background{
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb{
+    -fx-background-insets: 4px;
+    -fx-background-color: #676665;
+}
+
+.scroll-bar .thumb:hover{
+    -fx-background-color: #949191;
+}
+.scroll-bar .corner{
+    -fx-background-color: transparent;
+}
+
+#scroll-pane,
+#scroll-pane .viewport,
+#scroll-pane VBox{
+    -fx-background-color: #1f1f1f;
+}
+
+#scroll-pane  HBox,
+#scroll-pane  HBox > JFXButton,
+#scroll-pane  HBox > Label {
     -fx-pref-height: 40px;
 }
 
-#left-container > HBox > JFXButton {
+#left-container  HBox > JFXButton {
     -fx-alignment: CENTER_LEFT;
     -fx-font-size: 14px;
     -fx-background-radius: 0;
 	-fx-text-overrun: clip;
 }
 
-#left-container > HBox > JFXButton:hover{
+#searchIcon:hover,
+#scroll-pane  HBox > JFXButton:hover{
 	-fx-background-color: linear-gradient(to right,#363636, #4b4b4b);;
 }
 
@@ -77,6 +113,8 @@
 }
 #main-container{
     -fx-pref-width: 880px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
 }
 #main-container,
 #main-container .viewport {

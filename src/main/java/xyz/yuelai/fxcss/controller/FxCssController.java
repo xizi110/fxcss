@@ -1,5 +1,6 @@
 package xyz.yuelai.fxcss.controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXHamburger;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -41,7 +42,7 @@ public class FxCssController {
     public JFXHamburger fold;
     public VBox nav;
     public TextField keyword;
-    public FontIcon searchIcon;
+    public JFXButton searchIcon;
     public Label title;
     private double offsetX;
     private double offsetY;
